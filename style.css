@@ -306,11 +306,11 @@ header{
     bottom: 0;
     right: 30px;
 }
-.register{
+.register-index{
     background-color: #f5f6fa;
     padding: 40px 0px;
 }
-.container-register{
+.container-register-index{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -665,6 +665,7 @@ footer span{
 .opp{
     padding: 100px 0px 70px;
     text-align: center;
+    background-color: #f5f6fa;
 }
 .opp h2{
     font-size: 36px;
@@ -673,4 +674,135 @@ footer span{
 }
 .opp img{
     margin-bottom: 30px;
+}
+.why{
+    display: flex;
+    padding: 100px;
+}
+.why-left{
+    width: 50%;
+}
+.why-left h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.why-left span{
+    color: var(--main-color);
+}
+.why-right{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-top: 100px;
+}
+.why-right-img-2{
+    position: absolute;
+    top: -130px;
+    right: 70px;
+}
+.why-right-img-3{
+    position: absolute;
+    left: 40px;
+    top: -40px;
+}
+.why-shap-1{
+    position: absolute;
+    top: -120px;
+    left: 0;
+    z-index: -1;
+}
+.why-shap-2{
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    z-index: -1;
+}
+.sale{
+    background-image: url(./lap-trinh.jpg);
+    height: 700px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    gap: 100px;
+    padding: 100px;
+    position: relative;
+    z-index: 2;
+}
+.sale::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+    z-index: -1;
+}
+.sale-left{
+    width: 50%;
+}
+.sale-left h2{
+    font-size: 42px;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+.sale-left p{
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+.sale-left .here{
+    margin: 20px 0px;
+}
+.sale-contact{
+    font-size: 32px;
+    margin-bottom: 25px
+}
+.sale-right{
+    width: 50%;
+}
+.container-register{
+    padding: 20px 0px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+}
+.register{
+    padding: 25px 30px 20px;
+    text-align: center;
+    background-color: var(--main-color);
+    width: 420px;
+}
+.register span{
+    color: var(--white-color);
+}
+.register h3{
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 400;
+}
+.form input{
+    background-color: #f8f9fb;
+    border-color: #e1e2e3;
+    color: #616161;
+    height: 50px;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ececed;
+    margin-bottom: 30px;
+    outline: none;
+}
+.form input:hover{
+
+}
+.form{
+    width: 420px;
+    margin-bottom: 30px;
+    border: 1px solid var(--main-color);
+    padding: 20px 20px 40px;
+    text-align: center;
 }
