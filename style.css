@@ -92,6 +92,9 @@ header{
 .menu-item-table:hover a{
     color: var(--body-color);
 }
+.menu-item-table:hover i{
+    transform: rotate(180deg);
+}
 .menu .menu-item-table i{
     color: var(--body-color);
     font-weight: bold;
@@ -107,6 +110,8 @@ header{
     position: relative;
     cursor: pointer;
     transition: var(--transition);
+    display: flex;
+    align-items: center;
 }
 .menu-item-table a{
     font-size: 18px;
@@ -271,7 +276,6 @@ header{
 }
 .box{
     width: 394px;
-    height: 390px;
     text-align: start;
     box-shadow: var(--box-shadow);
     transition: var(--transition);
