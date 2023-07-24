@@ -413,11 +413,13 @@ header{
     position: absolute;
     top: 90px;
     left: 50px;
+    animation: updown linear 9s infinite;
 }
 .felling-img-2{
     position: absolute;
     bottom: 0;
     right: 30px;
+    animation: updown linear 9s infinite;
 }
 .register-index{
     background-color: #f5f6fa;
