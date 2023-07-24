@@ -605,6 +605,41 @@ footer span{
 }
 .target-left{
     width: 50%;
+    text-align: center;
+    position: relative;
+}
+.target-shape{
+}
+.target-shape-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 300px;
+    animation: circle  linear 9s infinite;
+    z-index: -1;
+}
+.target-shape-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    animation: updown  linear 9s infinite;
+}
+@keyframes updown{
+    from{
+        transform: translateY(0);
+    }to{
+        transform: translateY(20px);
+    }
+}
+@keyframes circle{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(230deg);
+    }
 }
 .target-left img{
     width: 100%;
@@ -689,7 +724,6 @@ footer span{
     height: 230px;
     background-color: transparent;
     border: 1px solid var(--white-color);
-    cursor: pointer;
     transition: var(--transition);
     padding-bottom: 40px;
 }
