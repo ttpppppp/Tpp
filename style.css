@@ -565,11 +565,15 @@ footer span{
     background-color: #f5f6fa;
 }
 .introduce-left{
+    background-image: url(./education-img\ \(1\).png);
     width: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .introduce-left img{
-    width: 800px;
-    height: 100%;
+    width: 100%;
+    height: auto;
     background-size: contain;
     background-position: center center;
 }
