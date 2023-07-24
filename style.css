@@ -41,7 +41,7 @@ header{
     left: 0;
     right: 0;
 }
-.menu .active{
+.menu .menu-item .active{
     color: var(--main-color);
 }
 .logo{
@@ -57,13 +57,13 @@ header{
     align-items: center;
     gap: 25px;
 }
-.menu li a{
+.menu .menu-item a{
     font-size: 18px;
     color: var(--body-color);
     transition: var(--transition);
     font-weight: bold;
 }
-.menu li:hover a{
+.menu .menu-item:hover a{
     color: var(--main-color);
     cursor: pointer;
 }
@@ -82,11 +82,14 @@ header{
     background-color: var(--white-color);
     color: var(--main-color);
 }
-.menu li{
+.menu .menu-item{
     display: flex;
     align-items: center;
 }
-.menu li i{
+.menu-item-table:hover a{
+    color: var(--body-color);
+}
+.menu .menu-item-table i{
     color: var(--body-color);
     font-weight: bold;
     font-size: 10px;
@@ -94,12 +97,18 @@ header{
     transition: var(--transition);
     cursor: pointer;
 }
-.menu li:hover i{
+.menu .menu-item-table:hover i{
     color: var(--main-color);
 }
 .menu-item-table{
     position: relative;
     cursor: pointer;
+    transition: var(--transition);
+}
+.menu-item-table a{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--body-color);
 }
 .menu-item-table:hover .menu-list{
     display: inline-flex;
@@ -136,13 +145,14 @@ header{
 .menu-list{
     position: absolute;
     left: -10px;
-    top: 160%;
+    top: 180%;
     display: flex;
     flex-direction: column;
     background-color: var(--white-color);
     width: 250px;
     display: none;
     transition: var(--transition);
+    animation: fadeUp ease-in 0.3s;
 }
 .menu-list::before{
     content: "";
@@ -153,13 +163,29 @@ header{
     position: absolute;
     top: -30px;
 }
-.menu-list a{
+.menu-item-table .menu-list a{
     padding: 10px 15px;
     border-bottom: 1px dashed var(--body-color);
+    font-size: 16px;
     color: var(--body-color);
 }
-.menu-list a:hover{
-    color: red;
+.menu-item-table .menu-list a:hover{
+    color: var(--main-color);
+}
+.menu-item-table:hover .table-heading{
+    color: var(--main-color);
+}
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(70px);
+    }to{
+        opacity: 1;
+        transform: translateY(-10PX);
+    }
+}
+.border{
+    border-top: 2px solid var(--main-color);
 }
 .source{
     margin-top: 100px;
