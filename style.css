@@ -229,8 +229,8 @@ header{
 }
 .menu-item-table .menu-list a{
     padding: 10px 15px;
-    border-bottom: 1px dashed var(--body-color);
-    font-size: 16px;
+    border-bottom: 1px dashed #eeeeee;
+    font-size: 15px;
     color: var(--body-color);
 }
 .menu-item-table .menu-list a:hover{
@@ -295,6 +295,7 @@ header{
 .box img{
     width: 100%;
     object-fit: cover;
+    aspect-ratio: 16/9;
 }
 .box .content{
     padding: 10px;
