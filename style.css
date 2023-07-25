@@ -131,6 +131,7 @@ header{
 }
 .hero-left{
     width: 58.3333333333%;
+    animation: fadeLeft linear 1s;
 }
 .hero-left .heading{
     font-size: 50px;
@@ -142,6 +143,12 @@ header{
     margin-bottom: 30px;
     line-height: 2;
     font-size: 19px;
+    animation-delay: 0.6s;
+    animation: fadeLeft linear 1s;
+}
+.hero-left a{
+    animation-delay: 1s;
+    animation: fadeLeft linear 1s;
 }
 .hero-right{
     width: calc(100% - 58.3333333333%);
@@ -149,6 +156,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fadeRight linear 1s;
 }
 .lobby1{
     width: 100px;
@@ -926,6 +934,7 @@ footer span{
     font-size: 42px;
     color: var(--white-color);
     margin-bottom: 20px;
+    animation: fadeLeft linear 1s;
 }
 .sale-left p{
     color: var(--white-color);
@@ -933,13 +942,16 @@ footer span{
 }
 .sale-left .here{
     margin: 20px 0px;
+    animation: fadeLeft linear 1s;
 }
 .sale-contact{
     font-size: 32px;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    animation: fadeLeft linear 1s;
 }
 .sale-right{
     width: 50%;
+    animation: fadeRight linear 1s;
 }
 .container-register{
     padding: 20px 0px;
@@ -985,4 +997,22 @@ footer span{
     border: 1px solid var(--main-color);
     padding: 20px 20px 40px;
     text-align: center;
+}
+@keyframes fadeRight{
+    from{
+        opacity: 0;
+        transform: translate3d(100%,0,0);
+    }to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+@keyframes fadeLeft{
+    from{
+        opacity: 0;
+        transform: translate3d(-100%,0,0);
+    }to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
 }
